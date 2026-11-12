@@ -29,7 +29,7 @@ const labels = {OPEN:'Cari Lawan', WAITING:'Menunggu Konfirmasi', DEAL:'DEAL'};
 let token, cards = [], selected, editingId, detailVersion = 0, listVersion = 0;
 async function rpc(method, ...args) {
   if (!navigator.onLine) throw new Error('Sambungkan internet untuk memuat atau menyimpan data.');
-  const response = await fetch('https://cari-lawan.ahmadabuya0.workers.dev/api/ligatemu',{
+  const response = await fetch('https://ligatemu.ahmadabuya0.workers.dev/',{
     method:'POST', headers:{'Content-Type':'application/json'},
     body:JSON.stringify({method,args:[token,...args]})
   });
