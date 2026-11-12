@@ -12,12 +12,47 @@
 <style>
 *{box-sizing:border-box}body{margin:0;background:#f1f4ef;color:#14291e;font:16px 'DM Sans',sans-serif}header{background:#102b20;color:white}nav,.hero,main{width:min(1120px,calc(100% - 32px));margin:auto}nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0;border-bottom:1px solid #ffffff29}.brand,h1,h2,h3{font-family:'Barlow Condensed',sans-serif}.brand{font-size:28px;font-weight:700}.brand span{color:#d5f567}.hero{position:relative;padding:42px 0;overflow:hidden}.hero>*{position:relative}.pitch{position:absolute;width:40%;height:140%;right:0;top:-20%;opacity:.25;transform:rotate(-17deg);border:2px solid #afdf87;background:repeating-linear-gradient(90deg,#457548 0 12%,#588752 12% 24%)}.pitch:after{content:'';position:absolute;inset:35% 30%;border:2px solid #afdf87;border-radius:50%}h1{font-size:clamp(48px,9vw,94px);line-height:.92;margin:0;max-width:650px}h1 span{color:#d5f567}p{line-height:1.5}.hero p{max-width:470px;color:#d8e6db}main{padding:24px 0 60px}.toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}.toolbar h2{font-size:34px;margin:0 auto 0 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,275px),1fr));gap:16px}.card,dialog{background:white;border:1px solid #dbe5da;border-radius:18px;padding:20px}.card{display:flex;flex-direction:column;gap:8px;overflow-wrap:anywhere}.card h3{font-size:30px;margin:0}.card p{margin:0}.card button{margin-top:auto}.badge{align-self:start;padding:4px 10px;border-radius:20px;background:#e5efdc;font-size:13px;font-weight:700}.badge.DEAL{background:#e8e9ed}.badge.WAITING{background:#fff0b7}button,input,select,textarea{font:inherit;border-radius:9px;padding:10px 12px}button{cursor:pointer;border:0;background:#174d35;color:white;font-weight:700}button.accent{background:#d5f567;color:#102b20}button.secondary{background:#e8efe7;color:#174d35}button:disabled{cursor:default;opacity:.55}input,select,textarea{border:1px solid #c9d7cb;background:white;color:inherit;max-width:100%;min-width:0}dialog{width:min(570px,calc(100% - 24px));max-height:90vh;overflow:auto}dialog::backdrop{background:#0b1d16bb}.dialog-head{display:flex;align-items:start;justify-content:space-between;gap:12px}.dialog-head h2{margin:0 0 12px;font-size:34px;overflow-wrap:anywhere}form,label{display:grid;gap:6px}form{gap:12px}.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.two label{min-width:0}.thread{border-top:1px solid #dbe5da;padding:12px 0;overflow-wrap:anywhere}.thread h3{margin:0 0 8px;font-size:24px}.message{background:#f1f5ef;border-radius:8px;padding:8px;margin:6px 0;white-space:pre-wrap}.actions{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.error{color:#a02222}[hidden]{display:none!important}@media(max-width:530px){.toolbar>*:not(h2){flex:1 1 100%}.toolbar h2{width:100%}.pitch{width:55%}}
 .hero{padding-block:clamp(48px,8vw,92px)}header{background:radial-gradient(ellipse at 85% 0%,#245d3b,#102b20 65%)}.grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,315px),1fr))}.card{box-shadow:0 12px 32px #162f2210;gap:13px}.card h3{font:700 16px 'DM Sans',sans-serif}.matchup{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:10px;text-align:center;background:#edf4eb;border-radius:14px;padding:16px 8px}.team{display:grid;justify-items:center;gap:8px}.crest{width:64px;height:64px;border-radius:14px;background:#fff;object-fit:contain;display:grid;place-items:center;font:700 25px 'Barlow Condensed',sans-serif;color:#1b5537;border:1px solid #dce8db}.versus{font:700 26px 'Barlow Condensed',sans-serif;color:#1b5537}.mapLink{color:#174d35;font-weight:700;display:inline-block;padding:8px 0}.card .actions{margin:0}.card .primary{width:100%}.uploadOpponent{margin:12px 0}.hint{font-size:13px;color:#496256}.shareText{width:100%}
+.site-footer{background:#102b20;color:#d8e6db;border-top:4px solid #d5f567}
+.footer-inner{width:min(1120px,calc(100% - 32px));margin:auto}
+.footer-grid{display:grid;grid-template-columns:1.45fr 1fr 1fr;gap:32px;padding:36px 0}
+.footer-grid section{min-width:0}
+.footer-grid p{max-width:37ch;margin:10px 0 0;font-size:14px}
+.footer-grid h2{margin:0 0 12px;color:#fff;font:700 22px 'Barlow Condensed',sans-serif}
+.footer-grid a{color:#e5f1e6;text-underline-offset:4px}
+.footer-grid ul{list-style:none;padding:0;margin:0;display:grid;gap:10px;font-size:14px}
+.footer-grid .footer-contact{display:inline-block;margin-top:14px;padding:9px 14px;border-radius:9px;background:#d5f567;color:#102b20;font-size:14px;font-weight:700;text-decoration:none}
+.site-footer a:focus-visible{outline:2px solid #fff;outline-offset:4px}
+.footer-bottom{border-top:1px solid #ffffff33;padding:15px 0;font-size:13px}
+@media(max-width:680px){.footer-grid{grid-template-columns:1fr;gap:24px;padding:28px 0}}
 </style>
 </head>
 <body>
-<header><nav><div class="brand">Liga<span>Temu</span></div><div class="actions"><button class="secondary" id="install">Pasang Aplikasi</button><button class="accent" id="new">+ Buat Kartu</button></div></nav>
+<header id="atas"><nav><div class="brand">Liga<span>Temu</span></div><div class="actions"><button class="secondary" id="install">Pasang Aplikasi</button><button class="accent" id="new">+ Buat Kartu</button></div></nav>
 <div class="hero"><div class="pitch" aria-hidden="true"></div><h1>Cari lawan.<br><span>Siap main.</span></h1><p>Temukan tim untuk sparing futsal, mini soccer, atau sepak bola di sekitar kamu.</p></div></header>
-<main><div class="toolbar"><h2>Jadwal Sparing</h2><input id="search" type="search" placeholder="Cari tim atau lokasi" aria-label="Cari tim atau lokasi"><select id="filter" aria-label="Filter status"><option value="">Semua status</option><option value="OPEN">Cari Lawan</option><option value="WAITING">Menunggu Konfirmasi</option><option value="DEAL">Deal</option></select><button id="refresh" class="secondary">Muat Ulang</button></div><p id="notice" role="status"></p><div class="grid" id="cards"></div></main>
+<main id="jadwal"><div class="toolbar"><h2>Jadwal Sparing</h2><input id="search" type="search" placeholder="Cari tim atau lokasi" aria-label="Cari tim atau lokasi"><select id="filter" aria-label="Filter status"><option value="">Semua status</option><option value="OPEN">Cari Lawan</option><option value="WAITING">Menunggu Konfirmasi</option><option value="DEAL">Deal</option></select><button id="refresh" class="secondary">Muat Ulang</button></div><p id="notice" role="status"></p><div class="grid" id="cards"></div></main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <section aria-label="Tentang LigaTemu">
+        <div class="brand">Liga<span>Temu</span></div>
+        <p>Cari lawan sparing futsal, mini soccer, atau sepak bola. Pilih jadwal, hubungi tim lewat kartu, dan sepakati lokasi pertandingan.</p>
+      </section>
+      <section aria-labelledby="footer-links">
+        <h2 id="footer-links">Jelajahi</h2>
+        <ul>
+          <li><a href="#jadwal">Lihat jadwal sparing</a></li>
+          <li><a href="#atas">Kembali ke atas</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="footer-help">
+        <h2 id="footer-help">Butuh bantuan?</h2>
+        <p>Kirim pertanyaan, masukan, atau laporan kendala LigaTemu.</p>
+        <a class="footer-contact" href="https://www.instagram.com/bangabuy/" target="_blank" rel="noopener noreferrer">Hubungi lewat Instagram ↗</a>
+      </section>
+    </div>
+    <div class="footer-bottom">&copy; @bangabuy</div>
+  </div>
+</footer>
 <dialog id="create"><div class="dialog-head"><h2 id="formTitle">Buat Kartu Sparing</h2><button class="secondary close" type="button" aria-label="Tutup">×</button></div>
 <form id="createForm"><label>Nama tim<input name="team" required maxlength="60"></label><label>Logo tim Anda <input type="file" name="logo1" accept="image/png,image/jpeg,image/webp"></label><label>Lokasi lapangan<input name="place" required maxlength="100"></label><label>Link Google Maps <input type="url" name="mapUrl" maxlength="1000" placeholder="Tempel link dari tombol Bagikan di Google Maps"><small class="hint">Opsional. Jika kosong, Maps akan mencari nama lokasi lapangan.</small></label><label>Format<select name="format"><option>Futsal</option><option>Mini Soccer</option><option>Sepak Bola</option></select></label><div class="two"><label>Tanggal<input type="date" name="date" required></label><label>Jam (WIB)<input type="time" name="time" required></label></div><label>Catatan<textarea name="note" maxlength="300" placeholder="Contoh: biaya lapangan dibagi dua"></textarea></label><p id="createError" class="error" role="alert" hidden></p><button id="formSubmit">Terbitkan Kartu</button></form></dialog>
 <dialog id="detail"><div class="dialog-head"><h2 id="detailTitle"></h2><button class="secondary close" type="button" aria-label="Tutup">×</button></div><p id="detailError" class="error" role="alert" hidden></p><div id="threads"></div></dialog>
