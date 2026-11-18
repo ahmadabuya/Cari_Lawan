@@ -88,7 +88,7 @@ header{background:linear-gradient(135deg,rgba(9,9,9,.84),rgba(48,34,14,.68));bac
         <a class="footer-contact" href="https://www.instagram.com/chickenhead_fc/" target="_blank" rel="noopener noreferrer">Hubungi lewat Instagram ↗</a>
       </section>
     </div>
-    <div class="footer-bottom">&copy; @bangabuy</div>
+    <div class="footer-bottom">&copy;bangabuy</div>
   </div>
 </footer>
 <dialog id="create"><div class="dialog-head"><h2 id="formTitle">Buat Kartu Sparing</h2><button class="secondary close" type="button" aria-label="Tutup">×</button></div>
@@ -197,8 +197,13 @@ async function shareLocation(card) {
 }
 function renderCards() {
   const query = $('search').value.trim().toLowerCase(), filter = $('filter').value;
-  const visible = cards.filter(c => (!filter || c.status === filter) &&
-    [c.team,c.place,c.format].some(v => v.toLowerCase().includes(query)));
+  const now = Date.now();
+  const visible = cards.filter(c => {
+    const matchTime = Date.parse(c.date + 'T' + c.time + ':00+07:00');
+    const showSchedule = filter === 'DEAL' || !Number.isFinite(matchTime) || matchTime >= now;
+    return showSchedule && (!filter || c.status === filter) &&
+      [c.team,c.place,c.format].some(v => v.toLowerCase().includes(query));
+  });
   $('cards').replaceChildren(...visible.map(c => {
     const card = el('article', '', 'card');
     const open = button(c.accessible ? 'Buka Kartu' : 'Kartu Terkunci', () => showCard(c), 'primary');
@@ -345,6 +350,10 @@ $('new').onclick=()=>openForm();
 $('refresh').onclick=refresh;
 $('search').oninput=renderCards;
 $('filter').onchange=renderCards;
+setInterval(() => { if (cards.length) renderCards(); }, 30000);
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden && cards.length) renderCards();
+});
 $('createForm').onsubmit=async event=>{
   event.preventDefault();
   const submit=event.submitter;
