@@ -3,27 +3,56 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#102b20">
+<meta name="theme-color" content="#090909">
 <title>LigaTemu — Cari Lawan Bola</title>
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="icon" href="/icon-192.png">
 <link rel="apple-touch-icon" href="/icon-192.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=DM+Sans:wght@400;600;700&display=swap">
 <style>
-*{box-sizing:border-box}body{margin:0;background:#f1f4ef;color:#14291e;font:16px 'DM Sans',sans-serif}header{background:#102b20;color:white}nav,.hero,main{width:min(1120px,calc(100% - 32px));margin:auto}nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0;border-bottom:1px solid #ffffff29}.brand,h1,h2,h3{font-family:'Barlow Condensed',sans-serif}.brand{font-size:28px;font-weight:700}.brand span{color:#d5f567}.hero{position:relative;padding:42px 0;overflow:hidden}.hero>*{position:relative}.pitch{position:absolute;width:40%;height:140%;right:0;top:-20%;opacity:.25;transform:rotate(-17deg);border:2px solid #afdf87;background:repeating-linear-gradient(90deg,#457548 0 12%,#588752 12% 24%)}.pitch:after{content:'';position:absolute;inset:35% 30%;border:2px solid #afdf87;border-radius:50%}h1{font-size:clamp(48px,9vw,94px);line-height:.92;margin:0;max-width:650px}h1 span{color:#d5f567}p{line-height:1.5}.hero p{max-width:470px;color:#d8e6db}main{padding:24px 0 60px}.toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}.toolbar h2{font-size:34px;margin:0 auto 0 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,275px),1fr));gap:16px}.card,dialog{background:white;border:1px solid #dbe5da;border-radius:18px;padding:20px}.card{display:flex;flex-direction:column;gap:8px;overflow-wrap:anywhere}.card h3{font-size:30px;margin:0}.card p{margin:0}.card button{margin-top:auto}.badge{align-self:start;padding:4px 10px;border-radius:20px;background:#e5efdc;font-size:13px;font-weight:700}.badge.DEAL{background:#e8e9ed}.badge.WAITING{background:#fff0b7}button,input,select,textarea{font:inherit;border-radius:9px;padding:10px 12px}button{cursor:pointer;border:0;background:#174d35;color:white;font-weight:700}button.accent{background:#d5f567;color:#102b20}button.secondary{background:#e8efe7;color:#174d35}button:disabled{cursor:default;opacity:.55}input,select,textarea{border:1px solid #c9d7cb;background:white;color:inherit;max-width:100%;min-width:0}dialog{width:min(570px,calc(100% - 24px));max-height:90vh;overflow:auto}dialog::backdrop{background:#0b1d16bb}.dialog-head{display:flex;align-items:start;justify-content:space-between;gap:12px}.dialog-head h2{margin:0 0 12px;font-size:34px;overflow-wrap:anywhere}form,label{display:grid;gap:6px}form{gap:12px}.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.two label{min-width:0}.thread{border-top:1px solid #dbe5da;padding:12px 0;overflow-wrap:anywhere}.thread h3{margin:0 0 8px;font-size:24px}.message{background:#f1f5ef;border-radius:8px;padding:8px;margin:6px 0;white-space:pre-wrap}.actions{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.error{color:#a02222}[hidden]{display:none!important}@media(max-width:530px){.toolbar>*:not(h2){flex:1 1 100%}.toolbar h2{width:100%}.pitch{width:55%}}
-.hero{padding-block:clamp(48px,8vw,92px)}header{background:radial-gradient(ellipse at 85% 0%,#245d3b,#102b20 65%)}.grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,315px),1fr))}.card{box-shadow:0 12px 32px #162f2210;gap:13px}.card h3{font:700 16px 'DM Sans',sans-serif}.matchup{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:10px;text-align:center;background:#edf4eb;border-radius:14px;padding:16px 8px}.team{display:grid;justify-items:center;gap:8px}.crest{width:64px;height:64px;border-radius:14px;background:#fff;object-fit:contain;display:grid;place-items:center;font:700 25px 'Barlow Condensed',sans-serif;color:#1b5537;border:1px solid #dce8db}.versus{font:700 26px 'Barlow Condensed',sans-serif;color:#1b5537}.mapLink{color:#174d35;font-weight:700;display:inline-block;padding:8px 0}.card .actions{margin:0}.card .primary{width:100%}.uploadOpponent{margin:12px 0}.hint{font-size:13px;color:#496256}.shareText{width:100%}
-.site-footer{background:#102b20;color:#d8e6db;border-top:4px solid #d5f567}
+*{box-sizing:border-box}body{margin:0;background:#101010;color:#f4eee3;font:16px 'DM Sans',sans-serif}header{background:#090909;color:white}nav,.hero,main{width:min(1120px,calc(100% - 32px));margin:auto}nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0;border-bottom:1px solid #ffffff29}.brand,h1,h2,h3{font-family:'Barlow Condensed',sans-serif}.brand{font-size:28px;font-weight:700}.brand span{color:#e8b95c}.hero{position:relative;padding:42px 0;overflow:hidden}.hero>*{position:relative}.pitch{position:absolute;width:40%;height:140%;right:0;top:-20%;opacity:.25;transform:rotate(-17deg);border:2px solid #ba8738;background:repeating-linear-gradient(90deg,#352615 0 12%,#261e14 12% 24%)}.pitch:after{content:'';position:absolute;inset:35% 30%;border:2px solid #ba8738;border-radius:50%}h1{font-size:clamp(48px,9vw,94px);line-height:.92;margin:0;max-width:650px}h1 span{color:#e8b95c}p{line-height:1.5}.hero p{max-width:470px;color:#c5bbaa}main{padding:24px 0 60px}.toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}.toolbar h2{font-size:34px;margin:0 auto 0 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,275px),1fr));gap:16px}.card,dialog{background:#191919;border:1px solid #3c3223;border-radius:18px;padding:20px}.card{display:flex;flex-direction:column;gap:8px;overflow-wrap:anywhere}.card h3{font-size:30px;margin:0}.card p{margin:0}.card button{margin-top:auto}.badge{align-self:start;padding:4px 10px;border-radius:20px;background:#382b17;font-size:13px;font-weight:700}.badge.DEAL{background:#2c2c2c}.badge.WAITING{background:#574018}button,input,select,textarea{font:inherit;border-radius:9px;padding:10px 12px}button{cursor:pointer;border:0;background:#e8b95c;color:white;font-weight:700}button.accent{background:#e8b95c;color:#090909}button.secondary{background:#29251e;color:#e8b95c}button:disabled{cursor:default;opacity:.55}input,select,textarea{border:1px solid #625137;background:#191919;color:inherit;max-width:100%;min-width:0}dialog{width:min(570px,calc(100% - 24px));max-height:90vh;overflow:auto}dialog::backdrop{background:#000000cc}.dialog-head{display:flex;align-items:start;justify-content:space-between;gap:12px}.dialog-head h2{margin:0 0 12px;font-size:34px;overflow-wrap:anywhere}form,label{display:grid;gap:6px}form{gap:12px}.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.two label{min-width:0}.thread{border-top:1px solid #3c3223;padding:12px 0;overflow-wrap:anywhere}.thread h3{margin:0 0 8px;font-size:24px}.message{background:#242019;border-radius:8px;padding:8px;margin:6px 0;white-space:pre-wrap}.actions{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.error{color:#ff9b89}[hidden]{display:none!important}@media(max-width:530px){.toolbar>*:not(h2){flex:1 1 100%}.toolbar h2{width:100%}.pitch{width:55%}}
+.hero{padding-block:clamp(48px,8vw,92px)}header{background:radial-gradient(ellipse at 85% 0%,#63421b,#090909 65%)}.grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,315px),1fr))}.card{box-shadow:0 12px 32px #162f2210;gap:13px}.card h3{font:700 16px 'DM Sans',sans-serif}.matchup{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:10px;text-align:center;background:#1b1813;border-radius:14px;padding:16px 8px}.team{display:grid;justify-items:center;gap:8px}.crest{width:64px;height:64px;border-radius:14px;background:#fff;object-fit:contain;display:grid;place-items:center;font:700 25px 'Barlow Condensed',sans-serif;color:#edc574;border:1px solid #69522a}.versus{font:700 26px 'Barlow Condensed',sans-serif;color:#edc574}.mapLink{color:#e8b95c;font-weight:700;display:inline-block;padding:8px 0}.card .actions{margin:0}.card .primary{width:100%}.uploadOpponent{margin:12px 0}.hint{font-size:13px;color:#c5bbaa}.shareText{width:100%}
+.site-footer{background:#090909;color:#c5bbaa;border-top:4px solid #e8b95c}
 .footer-inner{width:min(1120px,calc(100% - 32px));margin:auto}
 .footer-grid{display:grid;grid-template-columns:1.45fr 1fr 1fr;gap:32px;padding:36px 0}
 .footer-grid section{min-width:0}
 .footer-grid p{max-width:37ch;margin:10px 0 0;font-size:14px}
 .footer-grid h2{margin:0 0 12px;color:#fff;font:700 22px 'Barlow Condensed',sans-serif}
-.footer-grid a{color:#e5f1e6;text-underline-offset:4px}
+.footer-grid a{color:#eee0c8;text-underline-offset:4px}
 .footer-grid ul{list-style:none;padding:0;margin:0;display:grid;gap:10px;font-size:14px}
-.footer-grid .footer-contact{display:inline-block;margin-top:14px;padding:9px 14px;border-radius:9px;background:#d5f567;color:#102b20;font-size:14px;font-weight:700;text-decoration:none}
+.footer-grid .footer-contact{display:inline-block;margin-top:14px;padding:9px 14px;border-radius:9px;background:#e8b95c;color:#090909;font-size:14px;font-weight:700;text-decoration:none}
 .site-footer a:focus-visible{outline:2px solid #fff;outline-offset:4px}
 .footer-bottom{border-top:1px solid #ffffff33;padding:15px 0;font-size:13px}
 @media(max-width:680px){.footer-grid{grid-template-columns:1fr;gap:24px;padding:28px 0}}
+/* Black and gold club theme */
+html{scroll-behavior:smooth}
+body{background:radial-gradient(ellipse at 50% 0%,#272016 0%,#101010 65%);color:#f4eee3}
+header{background:radial-gradient(ellipse at 85% 0%,#63421b80,transparent 60%),#090909;border-bottom:1px solid #705024}
+.brand{letter-spacing:.6px;text-transform:uppercase}
+nav{flex-wrap:wrap}
+nav>.actions{margin:0}
+.hero{padding-block:clamp(48px,8vw,88px)}
+h1{font-weight:700;letter-spacing:-1px;text-transform:uppercase;text-shadow:0 4px 28px #0008}
+.pitch{opacity:.36;border-color:#b68a45;background:repeating-linear-gradient(90deg,#6b4b2226 0 12%,#b4853a15 12% 24%)}
+.pitch:after{border-color:#ba8738}
+.card{background:linear-gradient(145deg,#242019,#151515 70%);border-color:#554125;box-shadow:0 12px 32px #0004}
+.card:hover{border-color:#a47b39}
+.matchup{background:linear-gradient(135deg,#342717,#191713);border:1px solid #6e512a}
+.crest{background:#121212;color:#edc574;border-color:#69522a}
+button{background:linear-gradient(135deg,#efca7c,#ca9136);color:#181108}
+button.secondary{background:#29251e;color:#f2d29a;border:1px solid #70552b}
+button.accent{background:linear-gradient(135deg,#ffe0a0,#cf9a43);color:#181108}
+button:hover{filter:brightness(1.1)}
+input,select,textarea{background:#121212;color:#f4eee3;border-color:#625137;color-scheme:dark}
+input::placeholder,textarea::placeholder{color:#a99c88}
+input:focus,select:focus,textarea:focus{outline:2px solid #d7a84c;outline-offset:2px}
+dialog{background:#191919;border-color:#9c7335;color:#f4eee3}
+.badge{color:#f1ca80}.badge.DEAL{color:#e1e1e1}.badge.WAITING{color:#ffe1a0}
+.mapLink{color:#edc574}
+.site-footer{background:linear-gradient(135deg,#1e180f,#090909 65%);border-top-color:#bf8d3d}
+.footer-grid .footer-contact{background:linear-gradient(135deg,#ffe0a0,#cf9a43);color:#181108}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media(max-width:420px){nav .brand{font-size:25px}nav>.actions{width:100%}nav>.actions button{flex:1}.hero{padding-block:36px}}
 </style>
 </head>
 <body>
@@ -50,7 +79,7 @@
         <a class="footer-contact" href="https://www.instagram.com/ahmad_abuya/" target="_blank" rel="noopener noreferrer">Hubungi lewat Instagram ↗</a>
       </section>
     </div>
-    <div class="footer-bottom">&copy;bangabuy</div>
+    <div class="footer-bottom">&copy; @bangabuy</div>
   </div>
 </footer>
 <dialog id="create"><div class="dialog-head"><h2 id="formTitle">Buat Kartu Sparing</h2><button class="secondary close" type="button" aria-label="Tutup">×</button></div>
