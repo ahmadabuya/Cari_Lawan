@@ -53,6 +53,15 @@ dialog{background:#191919;border-color:#9c7335;color:#f4eee3}
 .footer-grid .footer-contact{background:linear-gradient(135deg,#ffe0a0,#cf9a43);color:#181108}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media(max-width:420px){nav .brand{font-size:25px}nav>.actions{width:100%}nav>.actions button{flex:1}.hero{padding-block:36px}}
+
+/* Club watermark behind the page content */
+body{position:relative;isolation:isolate;min-height:100vh;background:#0d0d0d}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:url('/chicken-head-background.jpg') center center / min(78vw,780px) auto no-repeat;opacity:.15}
+header{background:linear-gradient(135deg,rgba(9,9,9,.84),rgba(48,34,14,.68));backdrop-filter:blur(2px)}
+.card{background:linear-gradient(145deg,rgba(36,32,25,.91),rgba(21,21,21,.93));backdrop-filter:blur(5px)}
+.site-footer{background:linear-gradient(135deg,rgba(30,24,15,.9),rgba(9,9,9,.93))}
+@media(max-width:680px){body::before{background-size:110vw auto;opacity:.12}}
+
 </style>
 </head>
 <body>
@@ -76,10 +85,10 @@ dialog{background:#191919;border-color:#9c7335;color:#f4eee3}
       <section aria-labelledby="footer-help">
         <h2 id="footer-help">Butuh bantuan?</h2>
         <p>Kirim pertanyaan, masukan, atau laporan kendala LigaTemu.</p>
-        <a class="footer-contact" href="https://www.instagram.com/chickenhead_fc/" target="_blank" rel="noopener noreferrer">Hubungi lewat Instagram ↗</a>
+        <a class="footer-contact" href="https://www.instagram.com/bangabuy/" target="_blank" rel="noopener noreferrer">Hubungi lewat Instagram ↗</a>
       </section>
     </div>
-    <div class="footer-bottom">&copy;bangabuy</div>
+    <div class="footer-bottom">&copy; @bangabuy</div>
   </div>
 </footer>
 <dialog id="create"><div class="dialog-head"><h2 id="formTitle">Buat Kartu Sparing</h2><button class="secondary close" type="button" aria-label="Tutup">×</button></div>
